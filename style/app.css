@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg,#1565C0,#D500F9);
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  width: 400px;
+  height: auto;
+  padding: 30px;
+  border-radius: 20px;
+  color: #ffff;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: rgba(0,0,0,25);
+}
+.form-title{
+    color: #ffff;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+[type=text]{
+    width: 100%;
+    color: #ffff;
+    font-size: 0.9rem;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background-color:rgba(255,255,255,0.2);
+    padding: 0.8rem 1rem;
+    transition: 0.3s;
+}
+
+.input,textarea{
+    width:100%;
+    padding:12px 15px;
+    border:none;
+    outline:none;
+    border-radius:12px;
+    color:#ffff;
+    background:rgba(255,255,255,0.2);
+    font-size:14px;
+    transition:0.3s;
+
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:rgba(255,255,255,0.7);
+}
+
+input:focus,
+textarea:focus{
+    background:rgba(255,255,255,0.3);
+    box-shadow:0 0 10px rgba(255,255,255,0.4);
+}
+textarea{
+    resize:none;
+    height:100px;
+}
+
+button{
+    width: 100%;
+    background-color: #ffff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #7B1FA2;
+    outline: none;
+    border: none;
+    border-radius: 13px;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    transition:0.3s;
+
+
+}
+
+button:hover{
+    background:#f1f1f1;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+
+.result{
+    width: 100%;
+    background:rgba(255,255,255,0.15);
+    border-radius: 13px;
+    padding: 0.8rem 1rem;
+    font-size: 14px;
+    margin-top: 1rem;
+    cursor:copy;
+
+}
+
+/* responsive */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    input,
+    textarea {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    textarea {
+        height: 90px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .result {
+        font-size: 13px;
+        padding: 12px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .container {
+        width: 85%;
+        padding: 25px;
+    }
+
+    .container h2 {
+        font-size: 22px;
+    }
+
+    textarea {
+        height: 95px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .container {
+        width: 420px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+
+    .container {
+        width: 450px;
+        padding: 35px;
+    }
+
+    .container h2 {
+        font-size: 28px;
+    }
+
+}
